@@ -12,34 +12,32 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-html {
-    height: 2500px;
+    /* overflow-y:hidden; */
 }
 
 body {
-    background-color: rgba(0, 0, 0, 0.88);
-    /* background :url('../img/tryfonddec.jpg') fixed; */
+    /* background-color: rgba(0, 0, 0, 0.88); */
+    background :url('../img/tryfonddec3.png') fixed;
 }
 
 nav > .logo > img {
-    width: 150px;
+    width: 120px;
     position: relative;
     margin-left:65px;
+    margin-top:45px;
     padding:45px;
     box-sizing: content-box;
 }
 
 nav {
     width: 100%;
-    height: 250px;
+    height: 190px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
-    /* border-radius: 50%;
-    border-bottom:1px solid white; */
+    /* border-radius: 50%; */
+    /* border-bottom:1px solid white;  */
 }
 
 ul {
@@ -70,20 +68,78 @@ li > a:hover {
     transition: 0.1s;
 }
 
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
 section {
-    max-width: 1920px;
-    min-height: 800px;
+    min-width: 100vh;
+    min-height: 100vh;
     /* background-color: rgba(255, 255, 255, 0.199); */
 }
 
-
-.container {
+.flexMeEvenly {
     display:flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%;
+}
+
+.flexMeCenter {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexMeArround {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flexMeBetween {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexColumn {
+    flex-direction: column;
+}
+
+.flexRow {
+    flex-direction: row;
+}
+
+input[type=file]::file-selector-button,
+.btnBen {
+    border:none;
+    background-color: rgb(40, 49, 90);
+    color: white;
+    border-radius: .4em;
+    transition: 0.1s;
+    line-height: 5px;
+    min-height:35px;
+    text-align: center;
+    cursor: pointer;
+}
+  
+input[type=file]::file-selector-button:hover,
+.btnBen:hover {
+    background-color: rgb(67, 82, 146);
+}
+
+.btnBen{
+    width:120px;
+    min-height: 35px;
+}
+
+.container {
     padding:40px;
     position: relative;
+    /* border: 1px solid white; */
 }
 
 .container > span {
@@ -92,7 +148,6 @@ section {
 }
 
 .container > span > h1 {
-    color:#fff;
     font-size: 60px;
 }
 
@@ -101,7 +156,7 @@ section {
     z-index: 99;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 8px;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .behindImg {
@@ -110,11 +165,93 @@ section {
     height: 650px;
     /* border: 1px solid white; */
     z-index: 9;
-    float:inline-end;
     border-radius: 8px;
     right: 150px;
     top:0;
     background-color: rgba(255, 255, 255, 0.041);
+}
 
-    /* margin-left:0px; */
+.firstProjet {
+    width: 50%;
+    height: 60%;
+    /* position: absolute; */
+    z-index: 9;
+/* haut | droit | bas | gauche */
+    margin: 16% 0px 0px 40%;
+    border:1px solid white;
+    background :url('../img/projet1.png') no-repeat;
+    background-size: cover;
+    padding:10px;
+    /* opacity: 0.8; */
+    box-shadow: 80px -45px teal;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+}
+
+.backgroundInfoFirstProjet {
+    width: 56%;
+    height: 85%;
+    top :7%;
+    left: 5%;
+    position: absolute;
+    /* z-index: 9; */
+    background-color: rgb(198, 230, 224);
+    color:rgb(0, 0, 0);
+    border-radius: 10px;
+    /* Pas sur de ca ?*/
+    /* box-sizing: content-box;
+    padding:20px; */
+}
+
+.infoProjet1 > h2 {
+    text-align: center;
+    padding:10px;
+}
+
+.infoProjet1 {
+    position: relative;
+    word-break: break-all;
+    border-radius: 5%;
+    padding:15px;
+    position: relative;
+    top:19%;
+    margin-left:9%;
+    width: 45%;
+    height: 60%;
+    box-shadow: rgba(7, 87, 50, 0.363) 0px 5px 15px;
+}
+
+.descriptionProjet1 {
+    padding:5px;
+    min-height: 50%;
+}
+
+.placeMyButnInfo {
+ margin-left: 35%;
+}
+
+/* .secondProjet {
+    width: 50%;
+    height: 50%;
+    z-index: 9;
+    margin: 10% 7% auto;
+    border:1px solid white;
+    background :url('../img/projet2.png') no-repeat;
+    background-size: cover;
+    padding:10px;
+    box-shadow: -80px -45px teal;
+} */
+
+
+#sec2,
+#sec3,
+#sec4,
+#sec5,
+#sec6{
+    width: 80%;
+    height: 930px;
+    /* haut | droit | bas | gauche */
+    /* margin : 20px auto ;
+    border:1px solid white; */
+    position:relative;
 }
