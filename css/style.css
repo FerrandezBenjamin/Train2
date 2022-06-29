@@ -11,6 +11,7 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
+    /* line-height: 1.3; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* overflow-y:hidden; */
 }
@@ -29,40 +30,32 @@ body {
     box-sizing: content-box;
 } */
 
+
+
 .principalAccueil {
-    /* background-color: rgba(136, 23, 23, 0.199); */
     /* background-color: rgba(155, 81, 21, 0.247); */
-    background-color: rgba(13, 217, 231, 0.473);
+    /* background-color: rgba(13, 217, 231, 0.473); */
+    /* background-color: rgba(104, 24, 24, 0.445); */
+    background-color: rgba(36, 139, 117, 0.5);
+    /* background-color: rgba(34, 58, 37, 0.651); */
 }
 
 .fond_sec-2 {
-    background-color: rgba(255, 255, 255, 0.247);
+    background-color: antiquewhite;
 }
 
 .fond_sec-3 {
-    background-color: rgba(255, 255, 255, 0.247);
+    background-color: rgba(104, 24, 24, 0.445);
 }
 
 .fond_sec-4 {
-    background-color: rgba(13, 217, 231, 0.473);
+    background-color: antiquewhite;
 }
 
 .fond_sec-5 {
-    background-color: rgba(255, 255, 255, 0.247);
+    background-color: rgba(104, 24, 24, 0.445);
 }
 
-
-
-#acceuil {
-    width: 100%;
-    min-height: 190px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: sticky;
-    /* border-radius: 50%; */
-    /* border-bottom:1px solid white;  */
-}
 
 nav > ul > li {
     display: inline-block;
@@ -118,6 +111,14 @@ section {
     align-items: center;
 }
 
+.wrapMe {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;;
+}
+
 .flexMeBetween {
     display:flex;
     justify-content: space-between;
@@ -155,6 +156,17 @@ input[type=file]::file-selector-button:hover,
     min-height: 35px;
 }
 
+#acceuil {
+    width: 100%;
+    min-height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    /* border-radius: 50%; */
+    /* border-bottom:1px solid white;  */
+}
+
 .containerAccueil{
     width: 100%;
     height: 79vh;
@@ -168,114 +180,12 @@ input[type=file]::file-selector-button:hover,
 }
 
 .container {
-    padding:40px;
+    width: 100%;
+    height: 100%;
+    padding:20px;
     position: relative;
     /* border: 1px solid white; */
 }
-
-/* .container > span {
-    color: #fff;
-    max-width: 360px;
-}
-
-.container > span > h1 {
-    font-size: 60px;
-}
-
-.container > img {
-    width: 500px;
-    z-index: 99;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    border-radius: 8px;
-    opacity: 1;
-} */
-
-/* .behindImg {
-    width: 500px;
-    position: absolute;
-    height: 650px;
-    z-index: 9;
-    border-radius: 8px;
-    right: 150px;
-    top:0;
-    background-color: rgba(255, 255, 255, 0.041);
-} */
-
-
-.firstProjet {
-    width: 50%;
-    height: 60%;
-    top:25%;
-    right:10%;
-    position: absolute;
-    z-index: 9;
-/* haut | droit | bas | gauche */
-    /* margin: 16% 0px 0px 40%; */
-    background :url('../img/projet1.png') no-repeat;
-    background-size: cover;
-    padding:10px;
-    box-shadow: 80px -45px rgb(45, 51, 51);
-    border-top-right-radius: 2%;
-    border-bottom-right-radius: 2%;
-}
-
-.backgroundInfoFirstProjet {
-    width: 56%;
-    min-height: 600px;
-    height: 85%;
-    top :7%;
-    left: 5%;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.555);
-    /* background-color: rgb(198, 230, 224); */
-    color:rgb(0, 0, 0);
-    border-radius: 10px;
-    box-sizing: content-box;
-    padding:10px;
-}
-
-.infoProjet1 > h2 {
-    text-align: center;
-    padding:15px;
-    color:rgb(255, 255, 255);
-}
-
-.infoProjet1 {
-    position: relative;
-    /* border-radius: 5%; */ 
-    border-top-left-radius: 5%;
-    border-bottom-left-radius: 5%;
-    padding:20px;
-    position: relative;
-    top:19.9%;
-    margin-left:20%;
-    width: 42%;
-    height: 70.5%;
-    color:rgb(255, 255, 255);
-    box-shadow: rgba(255, 255, 255, 0.363) 0px 5px 15px;
-    background-color: rgb(27, 24, 24);
-}
-
-.descriptionProjet1 {
-    padding:5px;
-    min-height: 50%;
-}
-
-.placeMyButnInfo {
-    margin-left: 35%;
-}
-
-/* .secondProjet {
-    width: 50%;
-    height: 50%;
-    z-index: 9;
-    margin: 10% 7% auto;
-    border:1px solid white;
-    background :url('../img/projet2.png') no-repeat;
-    background-size: cover;
-    padding:10px;
-    box-shadow: -80px -45px teal;
-} */
 
 
 #sec2,
@@ -291,6 +201,12 @@ input[type=file]::file-selector-button:hover,
     position:relative;
 }
 
-#sec2:nth-child(1) {
-    background-color: antiquewhite;
+.card {
+    background-image: url('../img/cerveau.png');
+    background-size: cover;
+    width: 300px;
+    min-height:280px;
+    padding:40px;
+    border :3px solid rgb(182, 0, 0);
+    border-radius: 8px;
 }
